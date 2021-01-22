@@ -11,17 +11,14 @@ import HomePage from '../pages/HomePage';
 import AccountPage from '../pages/AccountPage';
 import AdminPage from '../pages/AdminPage';
 import { withAuthentication } from '../session';
-
-
+import "../scss/index.scss";
 const App = () =>  {
 
         return(
     <div className='App'> 
-        <h2> App</h2>
         <Router>
             <div>
                 <Navigation />
-                <hr/>
                 <Route exact path={ROUTES.LANDING} component={LandingPage}/>
                 <Route exact path={ROUTES.SIGN_UP} component={SignUpPage}/>
                 <Route exact path={ROUTES.SIGN_IN} component={SignInPage} />

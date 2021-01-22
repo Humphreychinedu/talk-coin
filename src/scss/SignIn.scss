@@ -5,18 +5,21 @@
 
 .section {
   display: flex;
-  align-items: center;
+  // align-items: center;
   margin: 0%;
-  position: relative;
+  // position: relative;
+
 }
 .welcome {
-  height: 100vh;
-  width: 50%;
+  height: auto;
+  flex: 1;  
   background-image: url("../assets/image/bg.jpg");
   background-repeat: no-repeat;
   overflow: hidden;
+  display:inline-block;
   background-size: cover;
   margin: 0%;
+  padding:0%;
   position: relative;
 
   h1 {
@@ -50,16 +53,17 @@
 
 .form {
   height: 500px;
-  background-image: url("../assets/image/lock.svg");
-  background-size: contain;
-  background-position: right;
-  background-repeat: no-repeat;
+  // background-image: url("../assets/image/peep-bitcoin.png");
+  // background-size: contain;
+  // background-position: right;
+  // background-repeat: no-repeat;
   padding: 5px;
 
   form {
-    margin-top: 200px;
+    margin-top: 100px;
     padding: 5px;
-
+    margin-left: 140px;
+    margin-bottom: 0px;
     label {
       // display: inline-block;
       padding: 4px;
@@ -73,11 +77,16 @@
       width: 200px;
     }
 
+
     input[type="password" i] {
       border: 2px solid #00008b;
       border-radius: 5px;
       padding: 7px;
       width: 200px;
+    }
+
+    span { 
+      color:4169E1;
     }
   }
 
@@ -89,10 +98,12 @@
   width: 50%;
   margin-left: 10px;
   padding: 0px;
+  flex: 1;
 }
 
 .footer {
   button {
+    
     border-radius: 5px;
     border: 2px;
     padding: 5px;
@@ -100,4 +111,42 @@
     font-size: 15px;
     font-weight: bold;
   }
+}
+.options {
+  margin-top: -150px;
+  margin-left: 150px;
+  
+}
+
+.bg-image {
+
+  background-image: url("../assets/image/peep-bitcoin.png");
+  background-size: contain;
+  background-position: left;
+  background-repeat: repeat;
+  height: 100px;
+}
+
+.head-image {
+  // background-image: url("../assets/image/bitcoin.png");
+  display: flex;
+  background-size: contain;
+  background-position: center;
+  height: 100px;
+  background-repeat: no-repeat; 
+    .site-name {
+      align-content: center;
+      margin-left: 0px;
+      margin-top: 10px;
+      color: royalblue;
+    }
+
+    .site-logo { 
+      height: 100px;
+      margin-left: 250px;
+      img {
+        width: 100px;
+      }
+    }
+    
 }
