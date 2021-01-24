@@ -1,14 +1,34 @@
 import React from 'react';
-import Naka from '../../assets/image/naka.svg';
+import Naka from '../../assets/image/naka-white.svg';
 import { Link } from 'react-router-dom';
 import '../../scss/Main.scss'
 
 const Main = () => {
     return (
       <React.Fragment>
+
+        
         <header>
-          <img src={Naka}  alt=''/>
-          <div>
+
+          <div className="header-top"> 
+          <div className="header-top-content"> 
+           
+              <h1>Invest in crypto and obtain financial freedom</h1>
+              <p>This landing page design example has a beautiful color scheme, appealing imagery, and dual CTAs. Nonprofits often struggle to get people to sign up for</p>
+
+              <div className="btn">
+                 <button id="sign-up" >Sign up</button> <button id="sign-in">Sign In</button>
+              </div>
+                
+            </div>
+          </div>
+          <div className='header-content ' >
+            <div className="image"> 
+            <img src={Naka}  alt=''/>
+            <h2>Invest right at home</h2>
+            <p>Your bitcoin connect by the tip of the finger. While Bitcoin uses private key encryption to verify owners and register transactions, fraudsters and scammers may attempt to sell false bitcoins</p>
+          </div>
+          <div className="content">
             <h1>
               We build &amp; design <br /> web applications.
             </h1>
@@ -17,14 +37,27 @@ const Main = () => {
               luctus congue dignissim. Vestibulum et ex nisl. Vestibulum eu
               luctus nisi. Fusce sit amet vehicula nisl.{" "}
             </p>
-            <Link to="/contact">Get in touch</Link>
           </div>
+          </div>
+
+          <section>
+            <div className="btn-container">
+               <Link to={""}> <button type="button"> Get in touch</button></Link>
+            </div>
+          </section>
+
+          <section className="container">
+             <div className="wave">
+             </div>
+          </section>
+          
         </header>
 
         <main>
           <section className="services">
             <h2>Why we should work together?</h2>
-
+            <hr/>
+            <div className="service-content">
             <div className="service-container">
               <div className="services-card service-one"></div>
               <div className="service-description">
@@ -80,6 +113,7 @@ const Main = () => {
                   Donec id magna risus.
                 </div>
               </div>
+            </div>
             </div>
           </section>
 
