@@ -127,10 +127,10 @@ body {
   }
 }
 
-.container {
+.wave-container {
   position: relative;
   background: $secondary-color;
-  height: 10vh;
+  height: 20vh;
 }
 
 .wave {
@@ -291,7 +291,7 @@ body {
   margin-top: 80px;
 }
 
-.footer {
+.main-footer {
   height: 400px;
   margin: 0%;
   background-color: #02131d;
@@ -337,4 +337,30 @@ body {
       rgba(0, 0, 0, 0)
     );
   }
+}
+
+@media (max-width: 880px) {
+ 
+	.header-content .service-content{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.service-content{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
 }

@@ -1,0 +1,67 @@
+$content-primary-color: #ffffff;
+$secondary-color: #1da1f2;
+$icon-color: #6C63FF;
+
+.app-header {
+    margin: 0%;
+    height: 80px;
+    display: flex;
+    background-color: $icon-color;
+    ul > li {
+        list-style: none;
+        padding: 10px;
+        list-style-type: none;
+        text-decoration-line: none;
+        display: inline-block;
+        a {
+            text-decoration: none;
+            color: $content-primary-color;
+        }
+
+        span {
+            color: $content-primary-color;
+            font-size: 24px;
+        }
+    }
+
+    .app-name {
+        flex: 1;
+
+        ul > li { 
+            margin-left: 100px;
+        }
+    }
+    .app-nav {
+        
+        ul { 
+            margin-right: 50px;
+        }
+        
+    }
+}
+
+@media (max-width: 880px) {
+ 
+	.app-header{
+		font: bold 14px sans-serif;
+	
+	}
+ 
+	.pp-header,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}

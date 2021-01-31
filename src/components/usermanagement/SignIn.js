@@ -5,11 +5,11 @@ import { withRouter } from "react-router-dom";
 import * as ROUTES from "../../constants/Paths";
 import { FaExclamation } from "react-icons/fa";
 import { RiLockPasswordFill } from "react-icons/ri";
-import {HiMail} from "react-icons/hi";
+import { HiMail } from "react-icons/hi";
 import "../../scss/SignIn.scss";
 import SignUpLink from "./SignUpLink";
 import PasswordForgetLink from "./PasswordForgetLink";
-import BITCOINSVG from '../../assets/image/bitcoin.png'; 
+import BITCOINSVG from "../../assets/image/bitcoin.png";
 
 const INITIAL_STATE = {
   email: "",
@@ -30,7 +30,7 @@ class SignIn extends Component {
       .login(email, password)
       .then(() => {
         this.setState({ ...INITIAL_STATE });
-        this.props.history.push(ROUTES.HOME);
+        this.props.history.push(ROUTES.DASHBOARD);
       })
       .catch((error) => {
         this.setState({ error });
@@ -60,17 +60,19 @@ class SignIn extends Component {
         </div>
         <div className="information">
           <div className="head-image">
-            <div className='site-logo'>
+            <div className="site-logo">
               <img src={BITCOINSVG} alt="" />
             </div>
-            <div className='site-name'>
+            <div className="site-name">
               <h3>Talk Coin</h3>
             </div>
           </div>
-          <div className="form">
+          <div className="sign-in-form">
             <form onSubmit={this.handleSubmit}>
               <div className="form-group">
-                <span><HiMail/></span><label htmlFor="email">Email Address:</label>
+                <span>
+                  <HiMail />
+                </span>
                 <input
                   type="text"
                   name="email"
@@ -81,7 +83,9 @@ class SignIn extends Component {
               </div>
               <br />
               <div className="form-group">
-                <span><RiLockPasswordFill/></span><label htmlFor="password">Password:</label>
+                <span>
+                  <RiLockPasswordFill />
+                </span>
                 <input
                   type="password"
                   name="password"

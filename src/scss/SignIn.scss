@@ -1,3 +1,7 @@
+$content-primary-color: #ffffff;
+$secondary-color: #1da1f2;
+$icon-color: #6c63ff;
+
 .base-container {
   width: 100%;
   // background-color: aqua;
@@ -8,18 +12,17 @@
   // align-items: center;
   margin: 0%;
   // position: relative;
-
 }
 .welcome {
   height: auto;
-  flex: 1;  
+  flex: 1;
   background-image: url("../assets/image/bg.jpg");
   background-repeat: no-repeat;
   overflow: hidden;
-  display:inline-block;
+  display: inline-block;
   background-size: cover;
   margin: 0%;
-  padding:0%;
+  padding: 0%;
   position: relative;
 
   h1 {
@@ -51,7 +54,7 @@
   }
 }
 
-.form {
+.sign-in-form {
   height: 500px;
   // background-image: url("../assets/image/peep-bitcoin.png");
   // background-size: contain;
@@ -71,26 +74,33 @@
       width: 400px;
     }
     input[type="text" i] {
-      border: 2px solid #00008b;
+      border: 2px solid $secondary-color;
       border-radius: 5px;
       padding: 7px;
-      width: 200px;
+      width: 400px;
     }
-
 
     input[type="password" i] {
-      border: 2px solid #00008b;
+      border: 2px solid $secondary-color;
       border-radius: 5px;
       padding: 7px;
-      width: 200px;
+      width: 400px;
     }
 
-    span { 
-      color:4169E1;
+    // span {
+    //   color: 4169e1;
+    // }
+    .form-group {
+      span {
+        position: absolute;
+        margin-left: 10px;
+        color: $icon-color;
+        margin-top: 6px;
+      }
+      input {
+        text-indent: 20px;
+      }
     }
-  }
-
-  .form-group {
   }
 }
 
@@ -103,23 +113,22 @@
 
 .footer {
   button {
-    
     border-radius: 5px;
     border: 2px;
-    padding: 5px;
+    padding: 7px;
     background-color: #dddddd;
     font-size: 15px;
     font-weight: bold;
+    width: 400px;
+    margin-left: 10px;
   }
 }
 .options {
   margin-top: -150px;
   margin-left: 150px;
-  
 }
 
 .bg-image {
-
   background-image: url("../assets/image/peep-bitcoin.png");
   background-size: contain;
   background-position: left;
@@ -133,20 +142,19 @@
   background-size: contain;
   background-position: center;
   height: 100px;
-  background-repeat: no-repeat; 
-    .site-name {
-      align-content: center;
-      margin-left: 0px;
-      margin-top: 10px;
-      color: royalblue;
-    }
+  background-repeat: no-repeat;
+  .site-name {
+    align-content: center;
+    margin-left: 0px;
+    margin-top: 10px;
+    color: $secondary-color;
+  }
 
-    .site-logo { 
-      height: 100px;
-      margin-left: 250px;
-      img {
-        width: 100px;
-      }
+  .site-logo {
+    height: 50px;
+    margin-left: 250px;
+    img {
+      width: 50px;
     }
-    
+  }
 }
